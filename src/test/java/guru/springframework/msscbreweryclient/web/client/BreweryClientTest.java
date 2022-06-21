@@ -28,7 +28,6 @@ class BreweryClientTest {
     void testSaveNewBeer() {
         //given
         BeerDto beerDto = BeerDto.builder().beerName("New Beer").build();
-
         URI uri = client.saveNewBeer(beerDto);
 
         assertNotNull(uri);
